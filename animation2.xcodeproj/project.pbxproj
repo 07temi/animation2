@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B6F2066581A9CFB323CB2DE /* Pods_animation2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A0D11CE408ECF50BC2C204 /* Pods_animation2.framework */; };
 		7DE40E9D278D8E410076CF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE40E9C278D8E410076CF44 /* AppDelegate.swift */; };
 		7DE40E9F278D8E410076CF44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE40E9E278D8E410076CF44 /* SceneDelegate.swift */; };
 		7DE40EA1278D8E410076CF44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE40EA0278D8E410076CF44 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BC67B4986D349B3520BD08F /* Pods-animation2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animation2.release.xcconfig"; path = "Target Support Files/Pods-animation2/Pods-animation2.release.xcconfig"; sourceTree = "<group>"; };
 		7DE40E99278D8E410076CF44 /* animation2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE40E9C278D8E410076CF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE40E9E278D8E410076CF44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		7DE40EA5278D8E420076CF44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE40EA8278D8E420076CF44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DE40EAA278D8E420076CF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38758E9F5C3ED6A77D63FCF /* Pods-animation2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animation2.debug.xcconfig"; path = "Target Support Files/Pods-animation2/Pods-animation2.debug.xcconfig"; sourceTree = "<group>"; };
+		F6A0D11CE408ECF50BC2C204 /* Pods_animation2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animation2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6F2066581A9CFB323CB2DE /* Pods_animation2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C5E2046302F9C436FE6E3D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0D11CE408ECF50BC2C204 /* Pods_animation2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DE40E90278D8E410076CF44 = {
 			isa = PBXGroup;
 			children = (
 				7DE40E9B278D8E410076CF44 /* animation2 */,
 				7DE40E9A278D8E410076CF44 /* Products */,
+				C9AF3144C6F8AFD17ADE66FF /* Pods */,
+				7C5E2046302F9C436FE6E3D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = animation2;
 			sourceTree = "<group>";
 		};
+		C9AF3144C6F8AFD17ADE66FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D38758E9F5C3ED6A77D63FCF /* Pods-animation2.debug.xcconfig */,
+				3BC67B4986D349B3520BD08F /* Pods-animation2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DE40EAD278D8E420076CF44 /* Build configuration list for PBXNativeTarget "animation2" */;
 			buildPhases = (
+				78A036E85C719DC3234466E5 /* [CP] Check Pods Manifest.lock */,
 				7DE40E95278D8E410076CF44 /* Sources */,
 				7DE40E96278D8E410076CF44 /* Frameworks */,
 				7DE40E97278D8E410076CF44 /* Resources */,
+				00BF6548DE6ADD1FBF67B0A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00BF6548DE6ADD1FBF67B0A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animation2/Pods-animation2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animation2/Pods-animation2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-animation2/Pods-animation2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78A036E85C719DC3234466E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-animation2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DE40E95278D8E410076CF44 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		7DE40EAE278D8E420076CF44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38758E9F5C3ED6A77D63FCF /* Pods-animation2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,12 +376,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7DE40EAF278D8E420076CF44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC67B4986D349B3520BD08F /* Pods-animation2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +393,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
